@@ -5,4 +5,11 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 {
 	
+	resultado = 10%2 ;
+
+	alert (resultado);
+
+	resultado = 2%10 ;
+
+	alert (resultado);
 }

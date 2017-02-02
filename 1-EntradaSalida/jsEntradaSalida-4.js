@@ -4,7 +4,9 @@
 */
 function Mostar()
 {
-
-	alert ("este es el ej 4");
+ 	// designo una variable y uso prompt para tomar el dato
+ 	
+ 	var minombre = prompt ("Ingrese Su Nombre");
+	document.getElementById('elNombre').value = minombre;
 }
 
