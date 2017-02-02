@@ -4,6 +4,7 @@
 */
 function Mostar()
 {
-	
+
+	alert ("este es el ej 4");
 }
 
