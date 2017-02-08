@@ -2,9 +2,10 @@
 y luego mostrarlo por 'alert' al presionar el botón  'MOSTRAR'*/
 function Mostar()
 {
+	
+	var respuesta = prompt ("");
 
-var edad = prompt ("");
-alert (edad);
+	alert (respuesta);
 
 }
 
