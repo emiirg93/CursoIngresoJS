@@ -1,13 +1,17 @@
 function Mostrar()
 {
-var cantidad = 0;
-var clave = prompt("ingrese clave.");
+	var contador = 0
+	var clave = prompt("ingrese el número clave.");
+	var clavecorrecta = "utn750";
 
-while (clave != "utn750" && cantidad <2)
-{
-	
-	cantidad++;
-	clave = prompt("Contraseña incorrecta. Ingrese de nuevo la clave: ");
-}
+		while (clave != clavecorrecta)
+		{
 
+			alert ("Clave incorrecta");
+			var clave = prompt("Reingrese el número clave.");
+			
+		}
+
+	alert ("Clave Correcta.");
+		
 }//FIN DE LA FUNCIÓN

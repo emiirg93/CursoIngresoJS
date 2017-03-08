@@ -4,37 +4,33 @@ function Mostrar()
 	var contador=0;
 	var positivo=0;
 	var negativo=1;
-	var numero;
-	var acumuladornegativo;
-	var acumuladorpositivo;
-	var respuesta=true;
+	var respuesta= true ;
 
 	while (respuesta == true)
 	{
 
-		numero = prompt ("Ingrese Numero.");
+		numero = prompt("Ingrese numeros.");
 		numero = parseInt (numero);
-		
-		if (numero<0)
+
+		if (numero <0)
 		{
 
-  			acumuladornegativo = negativo*numero;
-		
-		}
+			negativo = negativo*numero;
 
-		else
+		}
+		else 
 		{
 
-			acumuladorpositivo = positivo+numero;
+			positivo = positivo+numero
 
 		}
-		
-		contador = contador+1;
 
-		respuesta = confirm("¿Quiere ingresar otro numero?");
+		respuesta = confirm ("desea ingresar mas numeros?");
+		contador++
 	}
 
-document.getElementById('suma').value=acumuladorpositivo;
-document.getElementById('producto').value=acumuladornegativo;
+
+document.getElementById('suma').value=positivo;
+document.getElementById('producto').value=negativo;
 
 }//FIN DE LA FUNCIÓN

@@ -5,14 +5,13 @@ function Mostrar()
 	var acumulador=0;
 	var numero;
 
+
 	while (contador <5)
 	{
-
-		numero = prompt ("Ingrese Numero")
+		numero = prompt ("ingrese numero");
 		numero = parseInt (numero);
 		acumulador = acumulador+numero;
-		contador = contador+1;
-
+		contador++
 	}
 
 

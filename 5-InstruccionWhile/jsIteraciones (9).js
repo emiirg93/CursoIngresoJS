@@ -2,52 +2,49 @@ function Mostrar()
 {
 
 	var contador=0;
-	// declarar variables
-	var max;
-	var min;
-	var numero;
-	var respuesta='si';
+	var acumuladormax=0;
+	var acumuladormin=0;
+	
+	var respuesta = true;
 
-		while(respuesta!='no')
-		{
-			
-			numero = prompt ("Ingrese Numero.");
-			numero = parseInt(numero);
-			
-			if (contador == 0)
-			{
-
-				min=numero;
-				max=numero;
-
-			}
+	while(respuesta == true)
+	{
 		
-			else
+		numero = prompt("Ingrese numeros.");
+		numero = parseInt (numero);
+
+		if(contador==0)
+		{
+
+			acumuladormax=numero
+			acumuladormin=numero
+
+		}
+		else 
+		{
+
+			if(numero>acumuladormax)
 			{
 
-				if (numero>max)
-				{
-
-					max = numero;
-
-				}
-				if (numero<min)
-				{
-
-					min = numero;
-				}
-
+				acumuladormax=numero;
 			}
 			
-			contador = contador+1
-			respuesta = prompt ("¿Quiere ingresar otro numero?")
+			if(numero<acumuladormin)
+			{
+
+				acumuladormin=numero;
+
+			}
 
 		}
 
-	document.getElementById('maximo').value=numero;
-	document.getElementById('minimo').value=numero;
 
+		respuesta = confirm("Desea ingresar mas numeros?")
+		contador++
+	}
 
+document.getElementById('maximo').value=acumuladormax;
+document.getElementById('minimo').value=acumuladormin;
 
 
 }//FIN DE LA FUNCIÓN
