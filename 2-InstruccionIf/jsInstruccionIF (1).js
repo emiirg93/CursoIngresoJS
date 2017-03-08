@@ -2,20 +2,18 @@ function Mostrar()
 {
 //tomo la edad  
 
-var edad;
+	var edad;
 
-edad = document.getElementById('edad').value;
+	edad = document.getElementById('edad').value;
+	parseInt(edad);
 
-//se necesita asignar la variable antes del parseint SI O SI.
+	if (edad == 15)
+	{
+
+		alert ("Niña Bonita.");
+
+	}
 
 
-edad = parseInt (edad);
-
-//la llave va despues del if porque si se cumple la condicion aparece el alert. 
-
-	if(edad == 15){
-
-	alert("niña bonita");
-}
 
 }//FIN DE LA FUNCIÓN
