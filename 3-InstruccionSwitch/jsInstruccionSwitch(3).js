@@ -3,20 +3,19 @@ function Mostrar()
 //tomo la edad  
 var mesDelAño = document.getElementById('mes').value;
 
-//alert (mesDelAño);
-	
-	switch (mesDelAño)
-	{
-		case "Febrero":
+switch (mesDelAño)
+{
 
-			alert ("Este Mes No Tiene Mas De 29 Dias")
-			break;
+	case "Febrero":
+	alert ("Este mes no tiene mas de 29 dias.")
+	break;
 
-			default:
+	default :
 
-				alert ("Este Mes Tiene 30 o Mas Dias")
-				break;
-	}
+		alert ("Este mes tiene 30 o mas dias.")
+		break;
+
+}	
 	
 
 

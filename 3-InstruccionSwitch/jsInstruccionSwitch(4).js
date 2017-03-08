@@ -5,26 +5,25 @@ var mesDelAño = document.getElementById('mes').value;
 
 //alert (mesDelAño);
 	
-	
 	switch (mesDelAño)
 	{
+
 		case "Febrero":
-
-			alert ("Tiene 28 Dias.")
+			alert ("Este mes tiene 28 dias.")
 			break;
 
-		case"Abril":
-		case"Junio":
-		case"Septiembre":
-		case"Noviembre":
-
-			alert ("Tiene 30 Dias.")
+		case "Abril":
+		case "Junio":
+		case "Septiembre":
+		case "Noviembre":
+			alert ("Este mes tiene 30 dias.")
 			break;
 
-		default:
-
-			alert ("Tienen 31 Dias.")
+		default :
+			alert ("Este Mes Tiene 31 Dias.")
+			break;
 	}
+
 
 
 }//FIN DE LA FUNCIÓN
